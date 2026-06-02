@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário — Programador Front-End | SENAI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-badge">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="5" fill="#F4C430"/></svg>
+      <span>SENAI · FIRJAN</span> &nbsp;|&nbsp; Avaliação
+    </div>
+    <h1>Programador <em>Front-End</em><br>Módulo Básico</h1>
+    <p class="header-sub">Questionário de múltipla escolha com 10 questões por aula — desenvolvido para avaliação dos alunos do curso QUA0300-01.</p>
+    <div class="header-meta">
+      <div class="meta-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        4 Aulas
+      </div>
+      <div class="meta-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        40 Questões Total
+      </div>
+      <div class="meta-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        31 Alunos
+      </div>
+      <div class="meta-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Múltipla Escolha
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-bar">
+  <div class="tabs-inner">
+    <button class="tab-btn active" onclick="showTab(0)">🖥️ HTML <span class="tab-num">10</span></button>
+    <button class="tab-btn" onclick="showTab(1)">📁 CSS <span class="tab-num">10</span></button>
+    <button class="tab-btn" onclick="showTab(2)">🔀 JAVASCRIPT <span class="tab-num">10</span></button>
+<!--     <button class="tab-btn" onclick="showTab(3)">🐳 Aula 04 — Docker <span class="tab-num">10</span></button>
+ -->    <!-- <button class="tab-btn" onclick="showTab(4)">📋 Guia Google Forms</button> -->
+  </div>
+</div>
+
+<main>
+
+<!-- ══════════════════════════ AULA 01 ══════════════════════════ -->
+<div class="section active" id="section-0">
+  <div class="section-header">
+    <div class="section-icon">🖥️</div>
+    <div class="section-info">
+      <h2>Aula 01 — Apresentação e Iniciação à Informática</h2>
+      <p>Conceitos de TI, hardware, software, áreas de atuação (Front-End, Back-End, Full Stack), tecnologias web e sistema operacional.</p>
+    </div>
+  </div>
+  <div class="score-box" id="score-0">
+    <div>
+      <div class="score-label">Pontuação</div>
+      <div class="score-value" id="scoreVal-0">— <span>/ 10</span></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="reset-btn" onclick="resetSection(0)">↺ Reiniciar</button>
+      <button class="check-btn" onclick="checkSection(0)">Verificar Respostas</button>
+    </div>
+  </div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-0" style="width:0%"></div></div>
+  <div id="questions-0"></div>
+</div>
+
+<!-- ══════════════════════════ AULA 02 ══════════════════════════ -->
+<div class="section" id="section-1">
+  <div class="section-header">
+    <div class="section-icon">📁</div>
+    <div class="section-info">
+      <h2>Aula 02 — Manipulação de Arquivos e Ética Digital</h2>
+      <p>Estrutura de diretórios, tipos de arquivos, direitos autorais, LGPD, Marco Civil da Internet e licenças de software.</p>
+    </div>
+  </div>
+  <div class="score-box" id="score-1">
+    <div>
+      <div class="score-label">Pontuação</div>
+      <div class="score-value" id="scoreVal-1">— <span>/ 10</span></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="reset-btn" onclick="resetSection(1)">↺ Reiniciar</button>
+      <button class="check-btn" onclick="checkSection(1)">Verificar Respostas</button>
+    </div>
+  </div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-1" style="width:0%"></div></div>
+  <div id="questions-1"></div>
+</div>
+
+<!-- ══════════════════════════ AULA 03 ══════════════════════════ -->
+<div class="section" id="section-2">
+  <div class="section-header">
+    <div class="section-icon">🔀</div>
+    <div class="section-info">
+      <h2>Aula 03 — Gestão de Projetos e Git Básico</h2>
+      <p>Gestão de projetos, metodologias ágil vs. tradicional, ferramentas colaborativas (Trello, GitHub), controle de versão e comandos Git.</p>
+    </div>
+  </div>
+  <div class="score-box" id="score-2">
+    <div>
+      <div class="score-label">Pontuação</div>
+      <div class="score-value" id="scoreVal-2">— <span>/ 10</span></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="reset-btn" onclick="resetSection(2)">↺ Reiniciar</button>
+      <button class="check-btn" onclick="checkSection(2)">Verificar Respostas</button>
+    </div>
+  </div>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog-2" style="width:0%"></div></div>
+  <div id="questions-2"></div>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
