@@ -1,262 +1,200 @@
 const DATA = [
-  // ══ AULA 01 ══
   {
     section: 0,
     questions: [
       {
-        q: "Qual é a definição correta de Tecnologia da Informação (TI)?",
+        q: "O que significa HTML?",
         opts: [
-          "Conjunto de softwares usados exclusivamente em empresas para gestão de dados",
-          "Conjunto de recursos tecnológicos (hardware, software, redes e dados) usados para gerar, processar, armazenar, transmitir e recuperar informações",
-          "Área responsável apenas pelo suporte técnico de computadores e impressoras",
-          "Linguagem de programação utilizada para criar aplicações web"
+          "Hyper Text Markup Language",
+          "High Text Machine Language",
+          "Hyper Tool Markup Language",
+          "Home Text Markup Language"
         ],
+        answer: 0
+      },
+      {
+        q: "Qual tag cria um título principal?",
+        opts: ["<title>", "<h1>", "<head>", "<p>"],
         answer: 1
       },
       {
-        q: "Qual das opções a seguir é um exemplo de HARDWARE?",
-        opts: ["Sistema Operacional Windows", "Aplicativo Word", "Processador (CPU)", "Driver de impressora"],
+        q: "Qual tag é usada para criar um parágrafo?",
+        opts: ["<text>", "<paragraph>", "<p>", "<span>"],
         answer: 2
       },
       {
-        q: "O que distingue o desenvolvimento Front-End do Back-End?",
-        opts: [
-          "Front-End cuida do banco de dados e Back-End da interface visual",
-          "Front-End desenvolve a interface visual que o usuário vê no navegador; Back-End cria a lógica do servidor, banco de dados e autenticação",
-          "Front-End usa Java e Python; Back-End usa HTML e CSS",
-          "Não há diferença prática entre as duas áreas"
-        ],
+        q: "Qual tag insere uma imagem?",
+        opts: ["<img>", "<image>", "<picture>", "<src>"],
+        answer: 0
+      },
+      {
+        q: "Qual atributo define o endereço de uma imagem?",
+        opts: ["href", "link", "src", "url"],
+        answer: 2
+      },
+      {
+        q: "Qual tag cria um link?",
+        opts: ["<link>", "<a>", "<url>", "<button>"],
         answer: 1
       },
       {
-        q: "Quais tecnologias são utilizadas no desenvolvimento Front-End?",
-        opts: [
-          "Node.js, Python, Java e PHP",
-          "MySQL, MongoDB e PostgreSQL",
-          "HTML, CSS, JavaScript e React",
-          "Docker, Git, Linux e Apache"
-        ],
+        q: "Qual tag cria uma lista não ordenada?",
+        opts: ["<ol>", "<list>", "<ul>", "<li>"],
         answer: 2
       },
       {
-        q: "Qual é a carga horária TOTAL do curso Programador Front-End do SENAI?",
-        opts: ["80 horas", "120 horas", "164 horas", "180 horas"],
+        q: "Qual tag representa o corpo da página?",
+        opts: ["<body>", "<main>", "<html>", "<head>"],
+        answer: 0
+      },
+      {
+        q: "Qual tag é usada para criar uma quebra de linha?",
+        opts: ["<break>", "<lb>", "<newline>", "<br>"],
         answer: 3
       },
       {
-        q: "O que é um Sistema Operacional?",
-        opts: [
-          "Um aplicativo para criar planilhas e documentos de texto",
-          "Uma linguagem de programação usada no desenvolvimento web",
-          "O software responsável por gerenciar todos os recursos do computador e permitir que outros programas funcionem",
-          "Um hardware responsável pelo processamento de dados"
-        ],
-        answer: 2
-      },
-      {
-        q: "Qual atalho de teclado é utilizado para DESFAZER uma ação no computador?",
-        opts: ["Ctrl + C", "Ctrl + Z", "Ctrl + Y", "Ctrl + X"],
+        q: "Qual tag contém informações não visíveis da página?",
+        opts: ["<footer>", "<head>", "<body>", "<meta>"],
         answer: 1
-      },
-      {
-        q: "No contexto da Matriz Curricular do curso, qual é o Módulo Básico?",
-        opts: [
-          "Desenvolvimento Web",
-          "FrontEnd Essencial",
-          "Lógica de Programação",
-          "Iniciação à Tecnologia da Informação"
-        ],
-        answer: 3
-      },
-      {
-        q: "O que é um DRIVER no contexto de software?",
-        opts: [
-          "Um aplicativo de edição de vídeo",
-          "A interface entre o sistema operacional e o hardware, permitindo que o SO controle dispositivos",
-          "Um tipo de banco de dados relacional",
-          "Um framework JavaScript para criação de interfaces"
-        ],
-        answer: 1
-      },
-      {
-        q: "Qual atalho de teclado abre o Explorador de Arquivos no Windows?",
-        opts: ["Win + D", "Win + L", "Win + E", "Alt + Tab"],
-        answer: 2
       }
     ]
   },
 
-  // ══ AULA 02 ══
   {
     section: 1,
     questions: [
       {
-        q: "O que é a Estrutura Hierárquica de Diretórios?",
+        q: "O que significa CSS?",
         opts: [
-          "Um tipo de banco de dados usado para armazenar registros de usuários",
-          "A forma como o sistema operacional organiza arquivos e pastas em uma estrutura de árvore",
-          "Um método de compactação de arquivos para economizar espaço em disco",
-          "Uma linguagem de marcação para organizar conteúdo em páginas web"
-        ],
-        answer: 1
-      },
-      {
-        q: "Qual é a função da extensão de arquivo .html?",
-        opts: [
-          "Armazenar dados estruturados em formato de texto",
-          "Definir o estilo visual e o layout de uma página",
-          "Representar a estrutura de uma página web",
-          "Executar comportamentos e interações na página"
+          "Computer Style Sheets",
+          "Creative Style System",
+          "Cascading Style Sheets",
+          "Color Style Sheets"
         ],
         answer: 2
       },
       {
-        q: "O que representa a extensão .css em um projeto web?",
-        opts: ["Comportamento e interação da página", "Estilo visual (cores, fontes, layout)", "Estrutura da página", "Dados estruturados em formato JSON"],
-        answer: 1
-      },
-      {
-        q: "Qual lei brasileira regulamenta os Direitos Autorais e a Propriedade Intelectual?",
-        opts: ["Lei nº 8.078/90 — Código de Defesa do Consumidor", "Lei nº 12.965/2014 — Marco Civil da Internet", "Lei nº 9.610/98 — Lei de Direitos Autorais", "Lei nº 13.709/18 — LGPD"],
+        q: "Qual propriedade altera a cor do texto?",
+        opts: ["font-color", "text-color", "color", "background-color"],
         answer: 2
       },
       {
-        q: "O que é o Marco Civil da Internet (Lei nº 12.965/2014)?",
-        opts: [
-          "Uma lei que proíbe o uso de redes sociais por menores de 18 anos",
-          "A lei que estabelece princípios, garantias, direitos e deveres para o uso da internet no Brasil",
-          "Um regulamento técnico para instalação de infraestrutura de telecomunicações",
-          "Uma lei que regulamenta o comércio eletrônico no Brasil"
-        ],
+        q: "Qual propriedade altera a cor de fundo?",
+        opts: ["background-color", "color", "bg-color", "fill"],
+        answer: 0
+      },
+      {
+        q: "Qual propriedade altera o tamanho da fonte?",
+        opts: ["font-size", "text-size", "size", "font"],
+        answer: 0
+      },
+      {
+        q: "Qual propriedade centraliza texto?",
+        opts: ["align", "text-align", "center", "position"],
         answer: 1
       },
       {
-        q: "Qual é a principal característica da licença MIT?",
-        opts: [
-          "Trabalhos derivados também devem obrigatoriamente ser licenciados como MIT",
-          "Proíbe o uso comercial do software",
-          "Permite uso comercial, modificação, distribuição e uso privado, exigindo apenas manter o aviso de copyright original",
-          "É exclusiva para projetos open-source sem fins lucrativos"
-        ],
+        q: "Qual propriedade deixa o texto em negrito?",
+        opts: ["font-bold", "text-weight", "font-style", "font-weight"],
+        answer: 3
+      },
+      {
+        q: "Qual propriedade adiciona margem externa?",
+        opts: ["padding", "spacing", "margin", "border"],
         answer: 2
       },
       {
-        q: "Qual arquivo representa dados estruturados, muito utilizado em APIs web?",
-        opts: [".zip", ".png", ".json", ".pdf"],
-        answer: 2
-      },
-      {
-        q: "Por quanto tempo os provedores devem guardar logs de conexão segundo o Marco Civil da Internet?",
-        opts: ["3 meses", "6 meses a 1 ano", "2 anos", "5 anos"],
+        q: "Qual propriedade adiciona espaço interno?",
+        opts: ["margin", "padding", "border", "gap"],
         answer: 1
       },
       {
-        q: "Segundo a aula, qual é a forma CORRETA de usar imagens de terceiros em projetos sem violar direitos autorais?",
-        opts: [
-          "Usar qualquer imagem encontrada no Google, pois ela já é pública",
-          "Usar bancos de imagens gratuitos (como Unsplash e Pexels), citando sempre a fonte",
-          "Baixar imagens de redes sociais, desde que o perfil seja público",
-          "Usar qualquer imagem enquanto o projeto não tiver fins comerciais"
-        ],
-        answer: 1
+        q: "Qual seletor seleciona uma classe?",
+        opts: [".classe", "#classe", "*classe", "@classe"],
+        answer: 0
       },
       {
-        q: "Qual das licenças a seguir EXIGE que trabalhos derivados também sejam distribuídos sob a mesma licença?",
-        opts: ["MIT", "Creative Commons (CC)", "GPL — GNU General Public License", "BSD License"],
-        answer: 2
+        q: "Qual seletor seleciona um ID?",
+        opts: [".id", "*id", "@id", "#id"],
+        answer: 3
       }
     ]
   },
 
-  // ══ AULA 03 ══
   {
     section: 2,
     questions: [
       {
-        q: "Qual é a definição de Gestão de Projetos apresentada na aula?",
+        q: "JavaScript é usado principalmente para:",
         opts: [
-          "O processo de criação de interfaces visuais para aplicativos mobile",
-          "A aplicação de conhecimentos, habilidades e técnicas para conduzir um conjunto de tarefas com começo, meio e fim, atingindo objetivos dentro de prazos e recursos definidos",
-          "A metodologia usada exclusivamente por grandes empresas de tecnologia para gerenciar equipes",
-          "Um sistema de controle de versão distribuído para projetos colaborativos"
-        ],
-        answer: 1
-      },
-      {
-        q: "Qual metodologia de desenvolvimento é descrita como 'sequencial — cada fase só começa quando a anterior termina'?",
-        opts: ["Scrum", "Kanban", "Agile (Ágil)", "Waterfall (Cascata)"],
-        answer: 3
-      },
-      {
-        q: "Qual é a principal característica da metodologia Ágil (Agile)?",
-        opts: [
-          "Escopo fechado e bem definido, sem possibilidade de mudanças",
-          "Documentação extensa antes de qualquer implementação",
-          "Entregas em ciclos curtos (sprints), adaptável a mudanças e com comunicação intensa com o cliente",
-          "Indicada apenas para projetos de pequeno porte com até 3 desenvolvedores"
+          "Estilizar páginas",
+          "Criar banco de dados",
+          "Adicionar interatividade às páginas",
+          "Criar imagens"
         ],
         answer: 2
       },
       {
-        q: "Qual ferramenta de gestão de projetos foi RECOMENDADA na aula para os alunos iniciantes?",
-        opts: ["Jira", "GitHub Projects", "Notion", "Trello"],
-        answer: 3
-      },
-      {
-        q: "O que é Controle de Versão?",
-        opts: [
-          "Um sistema de backup automático que salva cópias de arquivos na nuvem a cada hora",
-          "Um sistema que registra cada mudança em arquivos ao longo do tempo, permitindo voltar a versões anteriores e trabalhar em paralelo",
-          "Uma metodologia de testes de software para garantir a qualidade do código",
-          "Um protocolo de comunicação entre servidores e clientes web"
-        ],
+        q: "Como declarar uma variável moderna?",
+        opts: ["var", "let", "int", "string"],
         answer: 1
       },
       {
-        q: "Qual comando Git inicia o controle de versão em uma pasta?",
-        opts: ["git start", "git create", "git init", "git new"],
+        q: "Qual comando exibe uma mensagem no console?",
+        opts: [
+          "console.log()",
+          "print()",
+          "show()",
+          "message()"
+        ],
+        answer: 0
+      },
+      {
+        q: "Qual símbolo representa igualdade estrita?",
+        opts: ["=", "==", "===", "=>"],
         answer: 2
       },
       {
-        q: "Qual comando Git salva uma versão (snapshot) do projeto com uma mensagem descritiva?",
-        opts: ["git save -m 'mensagem'", "git commit -m 'mensagem'", "git push -m 'mensagem'", "git add -m 'mensagem'"],
+        q: "Qual estrutura é usada para repetição?",
+        opts: ["if", "for", "switch", "else"],
         answer: 1
       },
       {
-        q: "Qual comando Git é usado para ENVIAR os commits locais para o repositório remoto no GitHub?",
-        opts: ["git pull origin main", "git fetch origin main", "git sync origin main", "git push origin main"],
-        answer: 3
+        q: "Qual função exibe uma janela de alerta?",
+        opts: ["confirm()", "alert()", "prompt()", "show()"],
+        answer: 1
       },
       {
-        q: "Para que serve o comando 'git status'?",
+        q: "Qual função solicita uma entrada do usuário?",
+        opts: ["prompt()", "alert()", "input()", "write()"],
+        answer: 0
+      },
+      {
+        q: "Qual método seleciona um elemento pelo ID?",
         opts: [
-          "Mostra o histórico completo de todos os commits realizados",
-          "Cria um novo branch no repositório",
-          "Mostra o estado dos arquivos (modificados, novos ou preparados para commit)",
-          "Verifica a conexão com o repositório remoto"
+          "getElementById()",
+          "queryClass()",
+          "selectId()",
+          "getByTag()"
         ],
+        answer: 0
+      },
+      {
+        q: "Qual palavra-chave cria uma função?",
+        opts: ["method", "function", "func", "create"],
+        answer: 1
+      },
+      {
+        q: "Qual evento ocorre ao clicar em um elemento?",
+        opts: ["onhover", "onchange", "onclick", "onload"],
         answer: 2
-      },
-      {
-        q: "Qual é a vantagem das BRANCHES no Git?",
-        opts: [
-          "Permitem aumentar a velocidade de processamento do computador durante o desenvolvimento",
-          "Permitem testar ideias e implementar funcionalidades sem quebrar o projeto principal",
-          "Servem para compactar o código antes de fazer o deploy",
-          "São usadas exclusivamente para criar releases oficiais do software"
-        ],
-        answer: 1
       }
     ]
-  },
-
-
+  }
 ];
 
-// ── State ──
-const state = { answers: [{}, {}, {}, {}], checked: [false, false, false, false] };
+const state = { answers: [{}, {}, {}], checked: [false, false, false] };
 
-// ── Render questions ──
 function renderAll() {
   DATA.forEach(({ section, questions }) => {
     const container = document.getElementById(`questions-${section}`);
@@ -273,11 +211,11 @@ function renderAll() {
         </div>
         <div class="options" id="opts-${section}-${qi}">
           ${q.opts.map((o, oi) => `
-            <div class="option" id="opt-${section}-${qi}-${oi}" onclick="selectOption(${section}, ${qi}, ${oi})">
-              <div class="option-letter">${letters[oi]}</div>
-              <span>${o}</span>
-            </div>
-          `).join('')}
+  <div class="option" id="opt-${section}-${qi}-${oi}" onclick="selectOption(${section}, ${qi}, ${oi})">
+    <div class="option-letter">${letters[oi]}</div>
+    <span>${o.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</span>
+  </div>
+`).join('')}  
         </div>
         <div class="feedback-msg" id="fb-${section}-${qi}"></div>
       `;
@@ -289,7 +227,7 @@ function renderAll() {
 function selectOption(sec, qi, oi) {
   if (state.checked[sec]) return;
   state.answers[sec][qi] = oi;
-  // Update UI
+  
   const opts = document.getElementById(`opts-${sec}-${qi}`).querySelectorAll('.option');
   opts.forEach((el, idx) => {
     el.classList.toggle('selected', idx === oi);
@@ -311,7 +249,7 @@ function checkSection(sec) {
     const chosen = state.answers[sec][qi];
     const fb = document.getElementById(`fb-${sec}-${qi}`);
     if (chosen === undefined) {
-      // not answered
+     
       const opts = document.getElementById(`opts-${sec}-${qi}`).querySelectorAll('.option');
       opts[q.answer].classList.add('correct');
       fb.className = 'feedback-msg show err';
@@ -352,7 +290,7 @@ function resetSection(sec) {
   });
 }
 
-// ── Tabs ──
+
 function showTab(idx) {
   document.querySelectorAll('.section').forEach((s, i) => s.classList.toggle('active', i === idx));
   document.querySelectorAll('.tab-btn').forEach((b, i) => b.classList.toggle('active', i === idx));
