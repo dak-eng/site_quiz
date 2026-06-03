@@ -24,7 +24,6 @@
     min-height: 100vh;
   }
 
-  /* ── HEADER ── */
   header {
     background: var(--blue-deep);
     color: white;
@@ -105,7 +104,6 @@
   }
   .meta-chip svg { opacity: 0.7; flex-shrink: 0; }
 
-  /* ── TABS ── */
   .tabs-bar {
     background: var(--white);
     border-bottom: 2px solid var(--border);
@@ -164,14 +162,12 @@
     color: white;
   }
 
-  /* ── MAIN ── */
   main {
     max-width: 960px;
     margin: 0 auto;
     padding: 36px 32px 64px;
   }
 
-  /* ── SECTION ── */
   .section { display: none; }
   .section.active { display: block; }
 
@@ -207,7 +203,6 @@
     line-height: 1.5;
   }
 
-  /* ── QUESTION CARD ── */
   .question-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -313,7 +308,6 @@
     color: white;
   }
 
-  /* ── PROGRESS BAR ── */
   .progress-bar-wrap {
     background: var(--border);
     border-radius: 50px;
@@ -328,7 +322,6 @@
     transition: width 0.4s ease;
   }
 
-  /* ── SCORE BOX ── */
   .score-box {
     background: var(--blue-deep);
     color: white;
@@ -412,8 +405,6 @@
     margin-bottom: 6px;
   }
 
-
-  /* ── FEEDBACK ── */
   .feedback-msg {
     padding: 10px 14px;
     border-radius: 8px;
